@@ -9,7 +9,7 @@ username = input("Enter your gmail user id: ")
 # This will store it into a variable for it to be used when passing this onto 
 # the webdriver object.
 # Note: Using stdiomask does not encrypt your password, it only masks the entry. 
-# Do not consider stdiomask as a completel secure transport protocol. It's only 
+# Do not consider stdiomask as a completely secure transport protocol. It's only 
 # a masking tool. 
 
 password = stdiomask.getpass("Enter Password: ")
