@@ -17,7 +17,7 @@ password = stdiomask.getpass("Enter Password: ")
 # Build the webdriver object. Use it to instantiate the use of the Firefox browser.
 # Note: You can utilize other browser drivers, do a search on webdriver options.
 
-driver = webdriver.jFirefox()
+driver = webdriver.Firefox()
 driver.get("http://gmail.google.com")
 
 # Time to send the credentials over to the driver object. 
@@ -31,6 +31,7 @@ time.sleep(5)
 # wants to, and update that script that would be nice.
 # I'm just providing this as an example of selenium, and some future reference should I need to 
 # do this for a project someday.
+
 driver.find_element_by_name("input[type=password]").send_keys(password)
 driver.find_element_by_id("passwordNext").click()
 time.sleep(5)
